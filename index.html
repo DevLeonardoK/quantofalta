@@ -16,7 +16,7 @@
     <nav class="nav-menu">
       <h1>Quanto falta?</h1>
     </nav>
-    <section class="body-complete">
+    <section class="body-complete" id="body-complete">
       <select name="turma" id="turma">
         <option value="#">Selecione a turma</option>
         <option value="23n">23 - PADRÃO</option>
@@ -26,11 +26,56 @@
         <option value="21">21</option>
       </select>
       <input
+        type="button"
+        value="Próximo"
+        class="button-next"
+        id="button-next"
+        onclick="showSubjects()"
+        id="buttonNext"
+      />
+      <table id="table23n">
+        <tr>
+          <th>Materias</th>
+          <th>Nota 1</th>
+          <th>Nota 2</th>
+          <th>Precisa</th>
+        </tr>
+        <tr>
+          <td>Biologia</td>
+          <td>
+            <input
+              class="inputNota1"
+              id="notaOneBiologia"
+              inputmode="decimal"
+              placeholder="Nota1"
+            />
+          </td>
+          <td>
+            <input
+              inputmode="decimal"
+              placeholder="Nota2"
+              class="inputNota1"
+              id="notaTwoBiologia"
+            />
+          </td>
+          <td class="resultado">
+            <p id="resultadoBiologia"></p>
+          </td>
+        </tr>
+      </table>
+      <!-- <input
         inputmode="decimal"
         pattern="[0-10]{1,3}"
         class="nota1"
         id="nota1"
+      /> -->
+      <input
+        type="button"
+        value="Calcular"
+        id="calcularButton"
+        onclick="calcular()"
       />
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>

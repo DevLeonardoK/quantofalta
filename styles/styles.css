@@ -12,10 +12,20 @@
   width: 100vw;
 }
 .body-complete select {
-  margin-top: 10em;
+  margin-top: 5em;
   width: 12em;
   text-align: center;
   height: 3em;
+}
+
+section {
+  gap: 3rem;
+}
+
+.button-next {
+  text-align: center;
+  width: 6em;
+  height: 2.5em;
 }
 
 nav {
@@ -31,6 +41,38 @@ nav {
 nav h1 {
   font-weight: 450;
   letter-spacing: 0.7px;
+}
+
+table {
+  display: none;
+  color: red;
+  border: 1px solid red;
+}
+table th {
+  border: 1px solid red;
+  padding: 0px;
+  width: 50px;
+}
+table td {
+  border: 1px solid red;
+  padding: 0px;
+  width: 50px;
+}
+
+.inputNota1 {
+  width: 50px;
+}
+
+.resultado {
+  text-align: center;
+  color: red;
+}
+
+#calcularButton {
+  display: none;
+  text-align: center;
+  width: 6em;
+  height: 2.5em;
 }
 
 /*# sourceMappingURL=styles.css.map */
