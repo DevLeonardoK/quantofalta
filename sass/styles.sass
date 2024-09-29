@@ -10,7 +10,7 @@
     justify-content: center
     align-items: center
     width: 100vw
-    height: 86vh
+    height: 100vh
 
     select
         width: 12.5em
@@ -21,9 +21,7 @@
         border-radius: 0.6em
         border: none
         outline: none
-        font-size: 16px
-section
-    gap: 1.5rem
+        font-size: 20px
 
 .button-next
     text-align: center
@@ -33,21 +31,23 @@ section
     border: none
     background-color: #1E3E62
     color: #f1f1f1
-    font-size: 16px
+    font-size: 20px
 
 nav
     background-color: #1E3E62
     width: 100%
-    height:7vh
+    height:10vh
     color:#f1f1f1
     text-align: center
     display: flex
     justify-content: center
     align-items: center
+    position: fixed
 
     h1
         font-weight: 450
         letter-spacing: 0.7px
+        font-size: 30px
 
 
 table
@@ -79,7 +79,10 @@ table
 
 .resultado
     text-align: center
-    color: red
+    p
+        font-family: "Bebas Neue"
+        font-size: 20px
+        text-align: center
 
 #calcularButton
     display: none
@@ -89,7 +92,17 @@ table
     border: none
     background-color: #1E3E62
     color: #f1f1f1
-    font-size: 16px
+    font-size: 18px
+
+#voltarButton
+    display: none
+    width: 7em
+    height: 4em
+    border-radius: 0.65em
+    border: none
+    background-color: #1E3E62
+    color: #f1f1f1
+    font-size: 18px
 
 .nome
     width: 100px
@@ -100,22 +113,24 @@ table
     font-style: italic
 
 .button-menu
-    margin-top: 20px
     display: flex
     justify-content: center
     align-items: center
-    gap: 15px
+    flex-direction: column
+    gap:5em
+    height: 85vh
+
 
 
 footer
     background-color: #1E3E62
-    height:4em
+    height:5em
     color:#f1f1f1
     text-align: center
-    position: static
     justify-content: center
     align-items: center
     display: flex
+    width: 100%
         
 
         
