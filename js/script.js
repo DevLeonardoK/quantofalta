@@ -2,9 +2,12 @@ var buttonNext = document.getElementById("button-next");
 var bodyComplete = document.getElementById("body-complete");
 var table = document.getElementById("table23n");
 var calcularButton = document.getElementById("calcularButton");
+var footer = document.getElementById("footer");
 
 function showSubjects() {
   let selectOption = document.getElementById("turma").value;
+  footer.style.height = "2.5em";
+  bodyComplete.style.height = "88.5vh";
 
   if (selectOption === "23n") {
     buttonNext.style.display = "none";
