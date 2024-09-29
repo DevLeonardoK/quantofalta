@@ -35,40 +35,429 @@
       />
       <table id="table23n">
         <tr>
-          <th>Materias</th>
+          <th>Matérias</th>
           <th>Nota 1</th>
           <th>Nota 2</th>
           <th>Precisa</th>
         </tr>
         <tr>
-          <td>Biologia</td>
+          <td class="nome">Biologia</td>
           <td>
             <input
               class="inputNota1"
               id="notaOneBiologia"
               inputmode="decimal"
               placeholder="Nota1"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
             />
           </td>
           <td>
             <input
               inputmode="decimal"
               placeholder="Nota2"
-              class="inputNota1"
+              class="inputNota2"
               id="notaTwoBiologia"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
             />
           </td>
           <td class="resultado">
-            <p id="resultadoBiologia"></p>
+            <p class="resultadoLabel" id="resultadoBiologia"></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="nome">Física</td>
+          <td>
+            <input
+              class="inputNota1"
+              id="notaOneFisica"
+              inputmode="decimal"
+              placeholder="Nota1"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td>
+            <input
+              inputmode="decimal"
+              placeholder="Nota2"
+              class="inputNota2"
+              id="notaTwoFisica"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td class="resultado">
+            <p class="resultadoLabel" id="resultadoFisica"></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="nome">Química</td>
+          <td>
+            <input
+              class="inputNota1"
+              id="notaOneQuimica"
+              inputmode="decimal"
+              placeholder="Nota1"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td>
+            <input
+              inputmode="decimal"
+              placeholder="Nota2"
+              class="inputNota2"
+              id="notaTwoQuimica"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td class="resultado">
+            <p class="resultadoLabel" id="resultadoQuimica"></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="nome">Filosofia</td>
+          <td>
+            <input
+              class="inputNota1"
+              id="notaOneFilosofia"
+              inputmode="decimal"
+              placeholder="Nota1"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td>
+            <input
+              inputmode="decimal"
+              placeholder="Nota2"
+              class="inputNota2"
+              id="notaTwoFilosofia"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td class="resultado">
+            <p class="resultadoLabel" id="resultadoFilosofia"></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="nome">Geografia</td>
+          <td>
+            <input
+              class="inputNota1"
+              id="notaOneGeografia"
+              inputmode="decimal"
+              placeholder="Nota1"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td>
+            <input
+              inputmode="decimal"
+              placeholder="Nota2"
+              class="inputNota2"
+              id="notaTwoGeografia"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td class="resultado">
+            <p class="resultadoLabel" id="resultadoGeografia"></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="nome">História</td>
+          <td>
+            <input
+              class="inputNota1"
+              id="notaOneHistoria"
+              inputmode="decimal"
+              placeholder="Nota1"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td>
+            <input
+              inputmode="decimal"
+              placeholder="Nota2"
+              class="inputNota2"
+              id="notaTwoHistoria"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td class="resultado">
+            <p class="resultadoLabel" id="resultadoHistoria"></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="nome">Português</td>
+          <td>
+            <input
+              class="inputNota1"
+              id="notaOnePortugues"
+              inputmode="decimal"
+              placeholder="Nota1"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td>
+            <input
+              inputmode="decimal"
+              placeholder="Nota2"
+              class="inputNota2"
+              id="notaTwoPortugues"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td class="resultado">
+            <p class="resultadoLabel" id="resultadoPortugues"></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="nome">Matemática</td>
+          <td>
+            <input
+              class="inputNota1"
+              id="notaOneMatematica"
+              inputmode="decimal"
+              placeholder="Nota1"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td>
+            <input
+              inputmode="decimal"
+              placeholder="Nota2"
+              class="inputNota2"
+              id="notaTwoMatematica"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td class="resultado">
+            <p class="resultadoLabel" id="resultadoMatematica"></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="nome">Espanhol</td>
+          <td>
+            <input
+              class="inputNota1"
+              id="notaOneEspanhol"
+              inputmode="decimal"
+              placeholder="Nota1"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td>
+            <input
+              inputmode="decimal"
+              placeholder="Nota2"
+              class="inputNota2"
+              id="notaTwoEspanhol"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td class="resultado">
+            <p class="resultadoLabel" id="resultadoEspanhol"></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="nome">Inglês</td>
+          <td>
+            <input
+              class="inputNota1"
+              id="notaOneIngles"
+              inputmode="decimal"
+              placeholder="Nota1"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td>
+            <input
+              inputmode="decimal"
+              placeholder="Nota2"
+              class="inputNota2"
+              id="notaTwoIngles"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td class="resultado">
+            <p class="resultadoLabel" id="resultadoIngles"></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="nome">TCC</td>
+          <td>
+            <input
+              class="inputNota1"
+              id="notaOneTCC"
+              inputmode="decimal"
+              placeholder="Nota1"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td>
+            <input
+              inputmode="decimal"
+              placeholder="Nota2"
+              class="inputNota2"
+              id="notaTwoTCC"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td class="resultado">
+            <p class="resultadoLabel" id="resultadoTCC"></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="nome">Negócios</td>
+          <td>
+            <input
+              class="inputNota1"
+              id="notaOneGestao"
+              inputmode="decimal"
+              placeholder="Nota1"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td>
+            <input
+              inputmode="decimal"
+              placeholder="Nota2"
+              class="inputNota2"
+              id="notaTwoGestao"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td class="resultado">
+            <p class="resultadoLabel" id="resultadoGestao"></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="nome">Literatura</td>
+          <td>
+            <input
+              class="inputNota1"
+              id="notaOneLiteratura"
+              inputmode="decimal"
+              placeholder="Nota1"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td>
+            <input
+              inputmode="decimal"
+              placeholder="Nota2"
+              class="inputNota2"
+              id="notaTwoLiteratura"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td class="resultado">
+            <p class="resultadoLabel" id="resultadoLiteratura"></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="nome">Projeto Vida</td>
+          <td>
+            <input
+              class="inputNota1"
+              id="notaOneProjeto"
+              inputmode="decimal"
+              placeholder="Nota1"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td>
+            <input
+              inputmode="decimal"
+              placeholder="Nota2"
+              class="inputNota2"
+              id="notaTwoProjeto"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td class="resultado">
+            <p class="resultadoLabel" id="resultadoProjeto"></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="nome">Talk</td>
+          <td>
+            <input
+              class="inputNota1"
+              id="notaOneTalk"
+              inputmode="decimal"
+              placeholder="Nota1"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td>
+            <input
+              inputmode="decimal"
+              placeholder="Nota2"
+              class="inputNota2"
+              id="notaTwoTalk"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td class="resultado">
+            <p class="resultadoLabel" id="resultadoTalk"></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="nome">Saúde Mov</td>
+          <td>
+            <input
+              class="inputNota1"
+              id="notaOneSaude"
+              inputmode="decimal"
+              placeholder="Nota1"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td>
+            <input
+              inputmode="decimal"
+              placeholder="Nota2"
+              class="inputNota2"
+              id="notaTwoSaude"
+              pattern="[0-10]{1,3}"
+              maxlength="3"
+            />
+          </td>
+          <td class="resultado">
+            <p class="resultadoLabel" id="resultadoSaude"></p>
           </td>
         </tr>
       </table>
-      <!-- <input
-        inputmode="decimal"
-        pattern="[0-10]{1,3}"
-        class="nota1"
-        id="nota1"
-      /> -->
+
       <input
         type="button"
         value="Calcular"
