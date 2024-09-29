@@ -17,14 +17,23 @@
       <h1>Quanto falta?</h1>
     </nav>
     <section class="body-complete" id="body-complete">
-      <select name="turma" id="turma">
-        <option value="#">Selecione a turma</option>
-        <option value="23n">23 - PADRÃO</option>
-        <option value="23t1">23 - TRILHA 1</option>
-        <option value="23t2">23 - TRILHA 2</option>
-        <option value="22">22</option>
-        <option value="21">21</option>
-      </select>
+      <section class="button-menu" id="button-menu">
+        <select name="turma" id="turma">
+          <option value="#">Selecione a turma</option>
+          <option value="23n">23 - PADRÃO</option>
+          <option value="23t1">23 - TRILHA 1</option>
+          <option value="23t2">23 - TRILHA 2</option>
+          <option value="22">22</option>
+          <option value="21">21</option>
+        </select>
+        <input
+          type="button"
+          value="Calcular"
+          id="calcularButton"
+          onclick="calcular()"
+        />
+      </section>
+
       <input
         type="button"
         value="Próximo"
@@ -457,14 +466,9 @@
           </td>
         </tr>
       </table>
-
-      <input
-        type="button"
-        value="Calcular"
-        id="calcularButton"
-        onclick="calcular()"
-      />
     </section>
+
+    <footer></footer>
     <script src="js/script.js"></script>
   </body>
 </html>
