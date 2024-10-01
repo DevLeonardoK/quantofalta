@@ -11,6 +11,7 @@ var navMenu = document.getElementById("nav-menu");
 var buttonMenu = document.getElementById("button-menu");
 var emailInput = document.getElementById("email");
 var enviarBtn = document.getElementById("enviar");
+var selectOption = document.getElementById("turma").value;
 
 function showSubjects() {
   let selectOption = document.getElementById("turma").value;
@@ -53,7 +54,6 @@ function calcular() {
   const inputNota1 = document.getElementsByClassName("inputNota1");
   const inputNota2 = document.getElementsByClassName("inputNota2");
   const resultados = document.getElementsByClassName("resultadoLabel");
-
   for (let i = 0; i < inputNota1.length; i++) {
     const valor1 = parseFloat(inputNota1[i]?.value.replace(",", ".")) || 0; // Usa o operador opcional, se nao tiver valor nao gera erro, mas sim undefined
     const valor2 = parseFloat(inputNota2[i]?.value.replace(",", ".")) || 0; // Usa o operador opcional, se nao tiver valor nao gera erro, mas sim undefined
@@ -68,6 +68,42 @@ function calcular() {
     } else {
       resultados[i].innerText = "-";
     }
+  }
+
+  if (table23Normal.style.display === "table") {
+    const item = document.getElementById("table23n");
+    var options = {
+      margin: [10, 10, 10, 10],
+      filename: "QuantoFalta.pdf",
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+    };
+
+    html2pdf().set(options).from(item).save();
+  }
+
+  if (table23Tone.style.display === "table") {
+    const item = document.getElementById("table23t1");
+    var options = {
+      margin: [10, 10, 10, 10],
+      filename: "QuantoFalta.pdf",
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+    };
+
+    html2pdf().set(options).from(item).save();
+  }
+
+  if (table23Ttwo.style.display === "table") {
+    const item = document.getElementById("table23t2");
+    var options = {
+      margin: [10, 10, 10, 10],
+      filename: "QuantoFalta.pdf",
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+    };
+
+    html2pdf().set(options).from(item).save();
   }
 }
 
@@ -85,5 +121,3 @@ function sendMail() {
     .send("service_h32qbef", "template_7jdnpe9", parms)
     .then(alert("Email Enviado...."));
 }
-
-// emailjs.send("service_h32qbef","template_7jdnpe9");
