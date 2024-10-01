@@ -28,8 +28,12 @@
         });
       })();
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js" integrity="sha512-MpDFIChbcXl2QgipQrt1VcPHMldRILetapBl5MPCA9Y8r7qvlwx1/Mc9hNTzY+kS5kX6PdoDq41ws1HiVNLdZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"
+      integrity="sha512-MpDFIChbcXl2QgipQrt1VcPHMldRILetapBl5MPCA9Y8r7qvlwx1/Mc9hNTzY+kS5kX6PdoDq41ws1HiVNLdZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body id="home">
     <nav class="nav-menu" id="nav-menu">
@@ -663,9 +667,10 @@
         </tr>
       </table>
       <section id="btnsEmail">
-        <input type="email" placeholder="Digite seu email" id="email"></input>
+        <!-- <input type="email" placeholder="Digite seu email" id="email"></input>
         <input type="text" placeholder="Digite sua mensagem" id="mensagem"></input>
-        <input type="button" value="Enviar" id="enviar" onclick="sendMail()">
+        <input type="button" value="Enviar" id="enviar" onclick="sendMail()"> -->
+        <input type="button" value="PDF" id="btnPdf" onclick="downloadPdf()" />
       </section>
     </section>
 

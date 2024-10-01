@@ -177,4 +177,15 @@ footer {
   gap: 30px;
 }
 
+#btnPdf {
+  display: none;
+  width: 8.5em;
+  height: 2em;
+  border-radius: 0.65em;
+  border: none;
+  background-color: #1E3E62;
+  color: #f1f1f1;
+  font-size: 16px;
+}
+
 /*# sourceMappingURL=styles.css.map */

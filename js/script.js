@@ -11,6 +11,7 @@ var navMenu = document.getElementById("nav-menu");
 var buttonMenu = document.getElementById("button-menu");
 var emailInput = document.getElementById("email");
 var enviarBtn = document.getElementById("enviar");
+var buttonPdf = document.getElementById("btnPdf");
 var selectOption = document.getElementById("turma").value;
 
 function showSubjects() {
@@ -22,8 +23,7 @@ function showSubjects() {
   buttonMenu.style.height = "auto";
   buttonMenu.style.marginTop = "80px";
   buttonMenu.style.marginBottom = "20px";
-  emailInput.style.display = "block";
-  enviarBtn.style.display = "block";
+  buttonPdf.style.display = "block";
 
   if (selectOption === "23n") {
     buttonNext.style.display = "none";
@@ -69,9 +69,14 @@ function calcular() {
       resultados[i].innerText = "-";
     }
   }
+}
 
+function downloadPdf() {
+  var table23Normal = document.getElementById("table23n");
+  var table23Tone = document.getElementById("table23t1");
+  var table23Ttwo = document.getElementById("table23t2");
   if (table23Normal.style.display === "table") {
-    const item = document.getElementById("table23n");
+    let item = document.getElementById("table23n");
     var options = {
       margin: [10, 10, 10, 10],
       filename: "QuantoFalta.pdf",
@@ -83,7 +88,7 @@ function calcular() {
   }
 
   if (table23Tone.style.display === "table") {
-    const item = document.getElementById("table23t1");
+    let item = document.getElementById("table23t1");
     var options = {
       margin: [10, 10, 10, 10],
       filename: "QuantoFalta.pdf",
@@ -95,11 +100,11 @@ function calcular() {
   }
 
   if (table23Ttwo.style.display === "table") {
-    const item = document.getElementById("table23t2");
+    let item = document.getElementById("table23t2");
     var options = {
-      margin: [10, 10, 10, 10],
+      margin: [30, 30, 30, 30],
       filename: "QuantoFalta.pdf",
-      html2canvas: { scale: 2 },
+      html2canvas: { scale: 1 },
       jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
     };
 
