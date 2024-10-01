@@ -1,6 +1,8 @@
 var buttonNext = document.getElementById("button-next");
 var bodyComplete = document.getElementById("body-complete");
-var table = document.getElementById("table23n");
+var table23Normal = document.getElementById("table23n");
+var table23Tone = document.getElementById("table23t1");
+var table23Ttwo = document.getElementById("table23t2");
 var calcularButton = document.getElementById("calcularButton");
 var footer = document.getElementById("footer");
 var optionBox = document.getElementById("turma");
@@ -20,8 +22,22 @@ function showSubjects() {
 
   if (selectOption === "23n") {
     buttonNext.style.display = "none";
-    table.style.display = "table";
+    table23Normal.style.display = "table";
     calcularButton.style.display = "block";
+  }
+
+  if (selectOption === "23t1") {
+    buttonNext.style.display = "none";
+    table23Tone.style.display = "table";
+    calcularButton.style.display = "block";
+    buttonMenu.style.marginTop = "0px";
+  }
+
+  if (selectOption === "23t2") {
+    buttonNext.style.display = "none";
+    table23Ttwo.style.display = "table";
+    calcularButton.style.display = "block";
+    buttonMenu.style.marginTop = "0px";
   }
 }
 
