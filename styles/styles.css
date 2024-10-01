@@ -145,4 +145,24 @@ footer {
   width: 100%;
 }
 
+#email {
+  width: 7em;
+  height: 4em;
+  border-radius: 0.65em;
+  border: none;
+  background-color: #1E3E62;
+  color: #f1f1f1;
+  font-size: 18px;
+}
+
+#mensagem, #enviar {
+  width: 7em;
+  height: 4em;
+  border-radius: 0.65em;
+  border: none;
+  background-color: #1E3E62;
+  color: #f1f1f1;
+  font-size: 18px;
+}
+
 /*# sourceMappingURL=styles.css.map */

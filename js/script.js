@@ -66,3 +66,16 @@ function calcular() {
 function voltarFunction() {
   window.location.reload(true); //reload (f5) limpando cache
 }
+
+function sendMail() {
+  let parms = {
+    email_user: document.getElementById("email").value,
+    message: document.getElementById("mensagem").value,
+  };
+
+  emailjs
+    .send("service_h32qbef", "template_7jdnpe9", parms)
+    .then(alert("Email Enviado...."));
+}
+
+// emailjs.send("service_h32qbef","template_7jdnpe9");

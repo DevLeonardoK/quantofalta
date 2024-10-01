@@ -17,6 +17,17 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "UD8ykklqCG5CtoWLi",
+        });
+      })();
+    </script>
   </head>
   <body>
     <nav class="nav-menu" id="nav-menu">
@@ -32,6 +43,10 @@
           <option value="22">22</option>
           <option value="21">21</option>
         </select>
+        <input type="email" placeholder="Digite seu email" id="email"></input>
+        <input type="text" placeholder="Digite sua mensagem" id="mensagem"></input>
+        <input type="button" value="ENVIAR" id="enviar" onclick="sendMail()">
+
         <input
           type="button"
           value="Próximo"
