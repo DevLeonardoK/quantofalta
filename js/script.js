@@ -9,6 +9,8 @@ var optionBox = document.getElementById("turma");
 var voltarButton = document.getElementById("voltarButton");
 var navMenu = document.getElementById("nav-menu");
 var buttonMenu = document.getElementById("button-menu");
+var emailInput = document.getElementById("email");
+var enviarBtn = document.getElementById("enviar");
 
 function showSubjects() {
   let selectOption = document.getElementById("turma").value;
@@ -19,6 +21,8 @@ function showSubjects() {
   buttonMenu.style.height = "auto";
   buttonMenu.style.marginTop = "80px";
   buttonMenu.style.marginBottom = "20px";
+  emailInput.style.display = "block";
+  enviarBtn.style.display = "block";
 
   if (selectOption === "23n") {
     buttonNext.style.display = "none";
@@ -31,6 +35,8 @@ function showSubjects() {
     table23Tone.style.display = "table";
     calcularButton.style.display = "block";
     buttonMenu.style.marginTop = "0px";
+    emailInput.style.marginTop = "35px";
+    enviarBtn.style.marginTop = "35px";
   }
 
   if (selectOption === "23t2") {
@@ -38,6 +44,8 @@ function showSubjects() {
     table23Ttwo.style.display = "table";
     calcularButton.style.display = "block";
     buttonMenu.style.marginTop = "0px";
+    emailInput.style.marginTop = "35px";
+    enviarBtn.style.marginTop = "35px";
   }
 }
 

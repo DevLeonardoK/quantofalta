@@ -133,23 +133,31 @@ footer
     width: 100%
 
 
-#email 
-    width: 7em
-    height: 4em
+#email,#mensagem, #enviar
+    display: none
+    width: 8.5em
+    height: 2em
     border-radius: 0.65em
     border: none
     background-color: #1E3E62
     color: #f1f1f1
-    font-size: 18px
+    font-size: 16px
 
-#mensagem, #enviar
-    width: 7em
-    height: 4em
-    border-radius: 0.65em
-    border: none
-    background-color: #1E3E62
+#enviar
+    width: 5em
+
+#email::placeholder
     color: #f1f1f1
-    font-size: 18px
+#mensagem::placeholder
+    color: #f1f1f1
+
+#btnsEmail
+    width: 100vw
+    display: flex
+    flex-direction: "row"
+    justify-content: center
+    align-items: center
+    gap: 30px
 
 
 
