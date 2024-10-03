@@ -21,9 +21,17 @@ function showSubjects() {
   voltarButton.style.display = "block";
   buttonMenu.style.flexDirection = "row";
   buttonMenu.style.height = "auto";
-  buttonMenu.style.marginTop = "80px";
+  buttonMenu.style.marginTop = "100px";
   buttonMenu.style.marginBottom = "20px";
   buttonPdf.style.display = "block";
+
+  if (window.screen.width >= 1024) {
+    buttonMenu.style.display = "flex";
+    buttonMenu.style.flexDirection = "row";
+    buttonMenu.style.gap = "5em";
+    buttonMenu.style.width = "340px";
+    buttonMenu.style.justifyContent = "center";
+  }
 
   if (selectOption === "23n") {
     buttonNext.style.display = "none";
