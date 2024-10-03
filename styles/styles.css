@@ -19,6 +19,7 @@ body {
   align-items: center;
   width: 100vw;
   min-height: 100%;
+  position: relative;
 }
 .body-complete select {
   width: 12.5em;
@@ -66,6 +67,7 @@ table {
   border: 1px solid #1E3E62;
   color: black;
   margin-bottom: 10px;
+  z-index: 10;
 }
 table th {
   border: 1px solid #1E3E62;
@@ -138,7 +140,8 @@ table td {
   align-items: center;
   flex-direction: column;
   gap: 5em;
-  height: 85vh;
+  position: fixed;
+  margin-bottom: 5em;
 }
 
 #footer {
@@ -151,6 +154,8 @@ table td {
   display: flex;
   width: 100%;
   margin: 0;
+  position: fixed;
+  bottom: 0;
 }
 
 #email, #mensagem, #enviar {
@@ -196,7 +201,7 @@ table td {
   font-size: 16px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   #body-complete {
     min-height: 100%;
     width: 100vw;

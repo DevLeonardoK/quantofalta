@@ -23,7 +23,6 @@ function showSubjects() {
   buttonMenu.style.height = "auto";
   buttonMenu.style.marginTop = "100px";
   buttonMenu.style.marginBottom = "20px";
-  buttonPdf.style.display = "block";
 
   if (window.screen.width >= 1024) {
     buttonMenu.style.display = "flex";
@@ -31,8 +30,15 @@ function showSubjects() {
     buttonMenu.style.gap = "5em";
     buttonMenu.style.width = "340px";
     buttonMenu.style.justifyContent = "center";
+    buttonPdf.style.display = "block";
+    buttonMenu.style.position = "relative";
+  } else {
+    buttonMenu.style.width = "240px";
+    navMenu.style.position = "absolute";
+    footer.style.position = "relative";
+    buttonMenu.style.position = "relative";
+    buttonPdf.style.display = "none";
   }
-
   if (selectOption === "23n") {
     buttonNext.style.display = "none";
     table23Normal.style.display = "table";
@@ -89,7 +95,7 @@ function downloadPdf() {
       margin: [10, 10, 10, 10],
       filename: "QuantoFalta.pdf",
       html2canvas: { scale: 2 },
-      jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+      jsPDF: { unit: "px", format: "a4", orientation: "portrait" },
     };
 
     html2pdf().set(options).from(item).save();
@@ -101,7 +107,7 @@ function downloadPdf() {
       margin: [10, 10, 10, 10],
       filename: "QuantoFalta.pdf",
       html2canvas: { scale: 2 },
-      jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+      jsPDF: { unit: "px", format: "a4", orientation: "portrait" },
     };
 
     html2pdf().set(options).from(item).save();
@@ -113,7 +119,7 @@ function downloadPdf() {
       margin: [30, 30, 30, 30],
       filename: "QuantoFalta.pdf",
       html2canvas: { scale: 1 },
-      jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+      jsPDF: { unit: "px", format: "a4", orientation: "portrait" },
     };
 
     html2pdf().set(options).from(item).save();
@@ -122,15 +128,4 @@ function downloadPdf() {
 
 function voltarFunction() {
   window.location.reload(true); //reload (f5) limpando cache
-}
-
-function sendMail() {
-  let parms = {
-    email_user: document.getElementById("email").value,
-    message: document.getElementById("mensagem").value,
-  };
-
-  emailjs
-    .send("service_h32qbef", "template_7jdnpe9", parms)
-    .then(alert("Email Enviado...."));
 }

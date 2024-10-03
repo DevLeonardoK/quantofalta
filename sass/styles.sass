@@ -17,6 +17,7 @@ body
     align-items: center
     width: 100vw
     min-height: 100%
+    position: relative
 
     select
         width: 12.5em
@@ -62,6 +63,7 @@ table
     border: 1px solid #1E3E62
     color: black
     margin-bottom:10px
+    z-index: 10
 
     th
         border: 1px solid #1E3E62
@@ -124,7 +126,8 @@ table
     align-items: center
     flex-direction: column
     gap:5em
-    height: 85vh
+    position: fixed
+    margin-bottom: 5em
 
 
 
@@ -138,6 +141,8 @@ table
     display: flex
     width: 100%
     margin: 0
+    position: fixed
+    bottom: 0
     
 
 
@@ -184,7 +189,7 @@ table
 
 
 //Responsividade
-@media (min-width: 1000px )
+@media (min-width: 1024px )
     #body-complete
         min-height: 100%
         width: 100vw
@@ -198,6 +203,8 @@ table
         width: 100%
         flex-direction: row
         justify-content: space-evenly
+
+
 
     
     
