@@ -24,3 +24,6 @@ Este é um site desenvolvido para calcular a média necessária do terceiro trim
 O site está hospedado no GitHub Pages e pode ser acessado diretamente através do seguinte link: [GitHub Pages](https://devleonardok.github.io/quantofalta/index.html).
 
 ## USO
+
+https://github.com/user-attachments/assets/b02f0599-ba1f-40bf-ba15-eb8bbd84510b
+
